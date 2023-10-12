@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Recursive:slnt,wght@-15,399&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <script src="main.js"></script>
+</head>
+<body>
+    <li class="repository secondary-background-color1" style="display:none">
+        <div class="repository-publicity small-font primary-color2">Public</div>
+        <div class="repository-language small-font primary-color2">Typescript</div>
+        <div class="repository-title medium-font secondary-color2">Repo title</div>
+        <div class="repository-description primary-color2"></div>
+    </li>
+    <div id="content-wrapper">
+        <div id="page-title">
+            <h1 id="page-title-heading" class="secondary-color2">Github Users</h1>
+            <h3 id="page-title-subheading" class="secondary-color1 light-font">Lookup a github user</h3>
+        </div>
+
+        <div id="main-content" class="flex-row small-font light-font">
+            <div id="side-info" class="flex-column">
+                <div id="profile-picture-container" class="secondary-color2">
+                    <img src="Media/profile-pic.png" alt="profile picture" id="profile-picture">
+                    0 followers • 0 following
+                </div>
+
+                <div id="user-info-container" class="flex-column secondary-color2">
+                    <div id="bio" class="text-wrap-wrap"></div>
+                    <div id="joined-date"></div>
+                    <div id="company-info" class="info-card" style="display:none;">
+                        <img src="Media/business-and-trade.png" alt="" class="info-icon">
+                        <div class="inline info-text">company</div>
+                    </div>
+                    <div id="location-info" class="info-card" style="display:none;">
+                        <img src="Media/location.png" alt="" class="info-icon">
+                        <div class="inline info-text">location</div>
+                    </div>
+                    <div id="mail-info" class="info-card" style="display:none;">
+                        <img src="Media/mail.png" alt="" class="info-icon">
+                        <div class="inline info-text">mail</div>
+                    </div>
+                </div>
+            </div>
+            <div id="center-info" class="flex-column">
+                <div id="names">
+                    <input id="username" type="text" placeholder="Username" class="secondary-color2">
+                    <div id="nickname" class="secondary-color1">username</div>
+                </div>
+                <div id="repositories-list-container">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #352F44;
+}
+
+#content-wrapper {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 0 4rem 1.5rem;
+    height: fit-content;
+    background-color: #5C5470;
+    border-radius: 20px;
+}
+
+#page-title {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+#page-title-heading {
+    font-size: 4em;
+    text-align: left;
+}
+
+#page-title-subheading {
+    font-size: 1em;
+    padding: 0 2%;
+    text-align: left;
+}
+
+#main-content {
+    height: fit-content;
+    justify-content: space-between;
+}
+
+#side-info {
+    flex-basis: 25%;
+    height: 420px;
+}
+
+#center-info {
+    height: 420px;
+    flex-basis: 70%;
+}
+
+#profile-picture-container {
+    align-self: center;
+    text-align: center;
+    padding-bottom: 1rem;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: rgba(250, 240, 230, 0.3);
+}
+
+#profile-picture {
+    width: 100%;
+    border-radius: 50%;
+}
+
+#user-info-container {
+    margin-top: 0.6rem;
+    justify-content: flex-start;
+    height: 8rem;
+}
+
+#repositories-list-container {
+    flex-basis: 80%;
+    flex-grow: 0;
+    list-style: none;
+    overflow-y: auto;
+}
+
+/* width */
+#repositories-list-container::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+#repositories-list-container::-webkit-scrollbar-track {
+    background: rgba(250, 240, 230, 0)
+  }
+   
+  /* Handle */
+#repositories-list-container::-webkit-scrollbar-thumb {
+    background: rgb(53, 47, 68); 
+  }
+  
+  /* Handle on hover */
+#repositories-list-container::-webkit-scrollbar-thumb:hover {
+    background: rgb(76, 68, 98); 
+  }
+
+#names {
+    flex-basis: 20%;
+    /* padding: 4.5rem  0 1rem; */
+}
+
+#username {
+    font-size: 2em;
+    border-style: none;
+    padding: 0;
+    background-color: rgba(0,0,0,0);
+}
+
+input[type=text]:focus {
+    border-style: none;
+    outline: none;
+    background-color: rgba(0,0,0,0);
+}
+
+::placeholder {
+    color: #FAF0E6;
+}
+
+#nickname {
+    font-size: 1.6em;
+}
+
+#bio {
+    margin: 0.2rem 0;
+    flex-shrink: 20;
+}
+
+#joined-date {
+    margin: 0.4rem 0;
+}
+
+.text-wrap-wrap {
+    overflow-wrap: break-word;
+}
+
+.repository {
+    height: 6rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    position: relative;
+}
+
+.repository-publicity {
+    position: absolute;
+    padding: 2px;
+    right: 3%;
+    top: 10%;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+}
+
+.repository-language {
+    position: absolute;
+    bottom: 10%;
+    left: 3%;
+}
+
+.repository-title {
+    position: absolute;
+    top: 10%;
+    left: 3%;
+}
+
+.repository-description {
+    position: absolute;
+    top: 32%;
+    left: 3%;
+}
+
+.repository:last-child {
+    margin-bottom: 0;
+}
+
+.repository:first-child {
+    margin-top: 0;
+}
+
+.small-font {
+    font-size: 0.8em;
+}
+
+.medium-font {
+    font-size: 1.1em;
+}
+
+.light-font {
+    font-weight: 300;
+}
+
+.info-card {
+    margin: .2rem 0;
+}
+
+.info-text {
+    margin-left: 0.5rem;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: row;
+}
+
+.info-icon {
+    width: 1.2em;
+    margin: 0;
+    vertical-align:text-bottom;
+}
+
+.inline {
+    display: inline;
+}
+
+.secondary-color2 {
+    color: #FAF0E6;
+}
+
+.secondary-color1 {
+    color: #B9B4C7;
+}
+
+.primary-color2 {
+    color: #5C5470;
+}
+
+.primary-color1 {
+    color: #352F44;
+}
+
+.secondary-background-color2 {
+    background-color: #FAF0E6;
+}
+
+.secondary-background-color1 {
+    background-color: #B9B4C7;
+}
+
+.primary-background-color2 {
+    background-color: #5C5470;
+}
+
+.primary-background-color1 {
+    background-color: #352F44;
+}
+
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: inherit;
+}
